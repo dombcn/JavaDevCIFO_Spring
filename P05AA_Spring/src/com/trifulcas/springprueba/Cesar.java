@@ -29,7 +29,9 @@ public class Cesar implements ICodificar {
 			if(c>='A' && c<='Z') {
 				cn = c - 'A';
 				// codificación CESAR
-				cn = (cn + pasoCD) % nAZ;
+				// NOTA: (X % Y + Y) % Y se usa para evitar errores en caso 
+				// que X sea negativo; alternativamente se puede usar math.mod(X,Y)
+				cn = ((cn + pasoCD) % nAZ + nAZ) % nAZ;
 				c = (char) (cn + 'A');
 			}
 			strRes = strRes.concat(String.valueOf(c));
