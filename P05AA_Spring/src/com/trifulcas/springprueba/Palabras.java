@@ -2,9 +2,7 @@ package com.trifulcas.springprueba;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import org.springframework.stereotype.Component;
 
-@Component
 public class Palabras implements IProcesar {
 	
 	@Override

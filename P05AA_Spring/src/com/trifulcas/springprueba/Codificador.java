@@ -2,9 +2,6 @@ package com.trifulcas.springprueba;
 
 import java.util.ArrayList;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Codificador {
 	
 	private IProcesar _procesar;
