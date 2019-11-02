@@ -29,4 +29,9 @@ public class AlumnoController {
 		}
 	}
 	
+	@RequestMapping("/inicio")
+	public String inicio() {
+		return "redirect:/";
+	}
+	
 }

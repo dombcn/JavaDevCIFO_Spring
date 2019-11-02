@@ -17,5 +17,7 @@
 				<li>${asign}</li>
 			 </c:forEach>
 		</ul>
+		
+		<a href="inicio">Inicio</a>
 	</body>
 </html>
